@@ -1,0 +1,9 @@
+{
+  "multi-enum-select.label": "Multi Select",
+  "multi-enum-select.description": "Mehrere Optionen aus einer Liste auswählen",
+  "multi-enum-select.enum.label": "Optionen (eine pro Zeile)",
+  "multi-enum-select.enum.description": "Geben Sie eine Option pro Zeile ein. Sie können auch einen Wert und eine Bezeichnung durch einen Doppelpunkt getrennt hinzufügen (z.B. \"Bezeichnung:Wert\").\nWenn kein Wert angegeben wird, wird die Bezeichnung als Wert verwendet",
+  "multi-enum-select.enum.placeholder": "z.B.:\nOption 1\nOption 2\nOption 3:option-3",
+  "multi-enum-select.default.label": "Standardwert",
+  "multi-enum-select.default.description": "Standardwert des Feldes im STRING-Format festlegen. Auf die Syntax achten, z.B.: \"option-1,option-2\""
+}

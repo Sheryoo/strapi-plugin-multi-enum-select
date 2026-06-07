@@ -1,0 +1,9 @@
+{
+  "multi-enum-select.label": "Multi Select",
+  "multi-enum-select.description": "Select multiple options from a list",
+  "multi-enum-select.enum.label": "Options (one per line)",
+  "multi-enum-select.enum.description": "Enter one option per line. You can also add a value and a label separated by a colon (e.g. \"label:value\").\nIf no value is provided, the label will be used as the value",
+  "multi-enum-select.enum.placeholder": "Ex:\nOption 1\nOption 2\nOption 3:option-3",
+  "multi-enum-select.default.label": "Default value",
+  "multi-enum-select.default.description": "Set the default value of the field in STRING format, be careful with the syntax, ex: \"option-1,option-2\""
+}
