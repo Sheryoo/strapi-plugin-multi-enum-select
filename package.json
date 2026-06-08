@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-multi-enum-select",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A strapi custom field for selecting multiple ENUM options from a provided list of items.",
   "keywords": [
     "strapi",
