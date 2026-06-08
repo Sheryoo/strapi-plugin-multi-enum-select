@@ -6,6 +6,10 @@
 
 ### CHANGELOG
 
+### 1.0.1
+
+- Published vai npm strapi-plugin-multi-enum-select
+
 #### 1.0.0
 
 - Forked from (<https://github.com/Zaydme/strapi-plugin-multi-select>) and make it with a string type instead of json for filtering
