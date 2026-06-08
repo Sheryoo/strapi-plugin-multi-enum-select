@@ -4,6 +4,20 @@
   "multi-enum-select.enum.label": "Optionen (eine pro Zeile)",
   "multi-enum-select.enum.description": "Geben Sie eine Option pro Zeile ein. Sie können auch einen Wert und eine Bezeichnung durch einen Doppelpunkt getrennt hinzufügen (z.B. \"Bezeichnung:Wert\").\nWenn kein Wert angegeben wird, wird die Bezeichnung als Wert verwendet",
   "multi-enum-select.enum.placeholder": "z.B.:\nOption 1\nOption 2\nOption 3:option-3",
+  "multi-enum-select.enum.delimiter.label": "Trennzeichen",
+  "multi-enum-select.enum.comma": "Komma (,)",
+  "multi-enum-select.enum.semicolon": "Semikolon (;)",
+  "multi-enum-select.enum.pipe": "Senkrechtstrich (|)",
+  "multi-enum-select.enum.slash": "Schrägstrich (/)",
+  "multi-enum-select.enum.dash": "Bindestrich (-)",
   "multi-enum-select.default.label": "Standardwert",
-  "multi-enum-select.default.description": "Standardwert des Feldes im STRING-Format festlegen. Auf die Syntax achten, z.B.: \"option-1,option-2\""
+  "multi-enum-select.default.description": "Standardwert des Feldes im String-Format festlegen. Auf die Syntax achten, z.B.: \"option-1,option-2\"",
+  "multi-enum-select.settings.requiredField": "Erforderliches Feld",
+  "multi-enum-select.settings.requiredField.description": "Sie können einen Eintrag nicht erstellen, wenn dieses Feld leer ist",
+  "multi-enum-select.settings.private": "Privates Feld",
+  "multi-enum-select.settings.private.description": "Dieses Feld wird nicht in der API-Antwort angezeigt",
+  "multi-enum-select.settings.minLength": "Mindestanzahl Elemente",
+  "multi-enum-select.settings.minLength.description": "Die Mindestanzahl zulässiger Elemente (nur visuelles Feedback, kann nicht erzwungen werden)",
+  "multi-enum-select.settings.maxLength": "Maximale Anzahl Elemente",
+  "multi-enum-select.settings.maxLength.description": "Die maximale Anzahl zulässiger Elemente (nur clientseitige Erzwingung)"
 }

@@ -29,8 +29,10 @@ const MultiSelect = ({
   const { formatMessage } = useIntl();
   const { onChange, value, error } = useField(name);
 
+  const delimiter = (attribute.options['delimiter'] as string) || ',';
+
   const possibleOptions = useMemo(() => {
-    return (attribute['options'] || [])
+    return (attribute.options['options'] || [])
       .map((option: string) => {
         const [label, value] = [...option.split(/:(.*)/s), option];
         if (!label || !value) return null;
@@ -49,12 +51,12 @@ const MultiSelect = ({
         parsedValues = Array.isArray(json)
           ? json
           : value
-              .split(',')
+              .split(delimiter)
               .map((v) => v.trim())
               .filter(Boolean);
       } catch {
         parsedValues = value
-          .split(',')
+          .split(delimiter)
           .map((v) => v.trim())
           .filter(Boolean);
       }
@@ -64,7 +66,7 @@ const MultiSelect = ({
         possibleOptions.find((option: { label: string; value: string }) => option.value === val)
       )
       .filter((option) => !!option);
-  }, [value, possibleOptions]);
+  }, [value, possibleOptions, delimiter]);
 
   const fieldError = useMemo(() => {
     if (error) return error;
@@ -133,7 +135,7 @@ const MultiSelect = ({
                     ? val
                         .filter((v: any) => !!v)
                         .map((v: any) => v.value)
-                        .join(',')
+                        .join(delimiter)
                     : null,
                 type: attribute.type,
               },

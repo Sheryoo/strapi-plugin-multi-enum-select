@@ -60,8 +60,42 @@ where you can filter it with `$eq` or `$contains` or .etc
 and you can parse it with:
 
 ```ts
-const values = stuf.split(',');
+const values = stuff.split(',');
 ```
+
+### Delimiter
+
+You can configure which character is used to separate the stored values. The delimiter is set per field in the **Base settings** tab of the content-type builder.
+
+Available options:
+
+| Label                 | Character |
+| --------------------- | --------- |
+| Comma `,` _(default)_ | `,`       |
+| Semicolon `;`         | `;`       |
+| Pipe `\|`             | `\|`      |
+| Slash `/`             | `/`       |
+| Dash `-`              | `-`       |
+
+When a non-default delimiter is configured the API response will reflect it:
+
+```json
+{
+  "data": {
+    "id": 1,
+    "stuff": "Banana;citron"
+  }
+}
+```
+
+Parse it on the client with the matching delimiter:
+
+```ts
+const delimiter = ';'; // match what you set in the field settings
+const values = stuff.split(delimiter);
+```
+
+> **Note:** If you change the delimiter on an existing field, previously stored values will not be migrated automatically. Make sure to update your stored data accordingly.
 
 ### why it's better than the original plugin
 

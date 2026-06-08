@@ -27,7 +27,7 @@ export default {
             sectionTitle: null,
             items: [
               {
-                name: 'options',
+                name: 'options.options',
                 type: 'textarea-enum',
                 intlLabel: {
                   id: getTrad('multi-enum-select.enum.label'),
@@ -44,7 +44,7 @@ export default {
                 },
               },
               {
-                name: 'default',
+                name: 'options.default',
                 type: 'string',
                 intlLabel: {
                   id: getTrad('multi-enum-select.default.label'),
@@ -53,9 +53,75 @@ export default {
                 description: {
                   id: getTrad('multi-enum-select.default.description'),
                   defaultMessage:
-                    'Set the default value of the field in string with comma separated format, be careful with the syntax, ex: "option-1,option-2"',
+                    'Set the default value of the field in string with custom delimiter separated format, be careful with the syntax, ex: "option-1,option-2" or "option-1;option-2" depending on the delimiter you choose',
                 },
-                defaultValue: '',
+                defaultValue: null,
+              },
+              {
+                name: 'options.delimiter',
+                type: 'select',
+                defaultValue: ',',
+                intlLabel: {
+                  id: 'multi-enum-select.enum.delimiter.label',
+                  defaultMessage: 'Delimiter',
+                },
+                description: {
+                  id: 'multi-enum-select.enum.delimiter.description',
+                  defaultMessage:
+                    'Choose the delimiter used to separate values in the default value field',
+                },
+                options: [
+                  {
+                    key: 'comma',
+                    value: ',',
+                    metadatas: {
+                      intlLabel: {
+                        id: 'multi-enum-select.enum.comma',
+                        defaultMessage: 'Comma (,)',
+                      },
+                    },
+                  },
+                  {
+                    key: 'semicolon',
+                    value: ';',
+                    metadatas: {
+                      intlLabel: {
+                        id: 'multi-enum-select.enum.semicolon',
+                        defaultMessage: 'Semicolon (;)',
+                      },
+                    },
+                  },
+                  {
+                    key: 'pipe',
+                    value: '|',
+                    metadatas: {
+                      intlLabel: {
+                        id: 'multi-enum-select.enum.pipe',
+                        defaultMessage: 'Pipe (|)',
+                      },
+                    },
+                  },
+                  {
+                    key: 'slash',
+                    value: '/',
+                    metadatas: {
+                      intlLabel: {
+                        id: 'multi-enum-select.enum.slash',
+                        defaultMessage: 'Slash (/)',
+                      },
+                    },
+                  },
+                  {
+                    key: 'dash',
+                    value: '-',
+                    metadatas: {
+                      intlLabel: {
+                        id: 'multi-enum-select.enum.dash',
+                        defaultMessage: 'Dash (-)',
+                      },
+                    },
+                  },
+                ],
               },
             ],
           },

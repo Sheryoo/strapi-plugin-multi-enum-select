@@ -4,6 +4,20 @@
   "multi-enum-select.enum.label": "Options (one per line)",
   "multi-enum-select.enum.description": "Enter one option per line. You can also add a value and a label separated by a colon (e.g. \"label:value\").\nIf no value is provided, the label will be used as the value",
   "multi-enum-select.enum.placeholder": "Ex:\nOption 1\nOption 2\nOption 3:option-3",
+  "multi-enum-select.enum.delimiter.label": "Delimiter",
+  "multi-enum-select.enum.comma": "Comma (,)",
+  "multi-enum-select.enum.semicolon": "Semicolon (;)",
+  "multi-enum-select.enum.pipe": "Pipe (|)",
+  "multi-enum-select.enum.slash": "Slash (/)",
+  "multi-enum-select.enum.dash": "Dash (-)",
   "multi-enum-select.default.label": "Default value",
-  "multi-enum-select.default.description": "Set the default value of the field in STRING format, be careful with the syntax, ex: \"option-1,option-2\""
+  "multi-enum-select.default.description": "Set the default value of the field in string with comma separated format, be careful with the syntax, ex: \"option-1,option-2\"",
+  "multi-enum-select.settings.requiredField": "Required field",
+  "multi-enum-select.settings.requiredField.description": "You won't be able to create an entry if this field is empty",
+  "multi-enum-select.settings.private": "Private field",
+  "multi-enum-select.settings.private.description": "This field will not show up in the API response",
+  "multi-enum-select.settings.minLength": "Minimum items",
+  "multi-enum-select.settings.minLength.description": "The minimum number of items allowed (visual feedback only, cannot be enforced)",
+  "multi-enum-select.settings.maxLength": "Maximum items",
+  "multi-enum-select.settings.maxLength.description": "The maximum number of items allowed (client-side enforcement only)"
 }
