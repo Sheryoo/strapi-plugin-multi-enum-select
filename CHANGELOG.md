@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Sheryoo/strapi-plugin-multi-enum-select/compare/v1.1.0...v1.2.0) (2026-06-09)
+
+
+### Features
+
+* add configurable delimiter support for multi-enum-select field ([4a2e6bd](https://github.com/Sheryoo/strapi-plugin-multi-enum-select/commit/4a2e6bda057b04d1669d89ca6f9a05bf1469838f))
+
 ## [1.1.0](https://github.com/Sheryoo/strapi-plugin-multi-enum-select/compare/v1.0.0...v1.1.0) (2026-06-08)
 
 
